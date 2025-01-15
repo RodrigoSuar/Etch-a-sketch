@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap; /* Flexbox wraps to create rows */
+    height: 60vh;
+    width: 50vw;
+    border: 1px solid black;
+}
+
+.row{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.box{
+    flex:1;
+    height: calc(100% / 50); /* Each box takes 1/50th of the container's height */
+    
+}
+button {
+    margin-top: 20px; /* Space between the grid and button */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    font-size: 16px; /* Increase font size for visibility */
+    width: 20vw;
+}
